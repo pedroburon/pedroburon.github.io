@@ -1,0 +1,88 @@
+body {
+  background-color: #ddd;
+  font-family: 'Molengo', sans-serif;
+  font-size: 12pt;
+  letter-spacing: 0em;
+}
+a {
+  color: #000;
+  text-decoration: none;
+  font-style: italic;
+}
+a:hover {
+  text-decoration: underline;
+}
+div.clearer {
+  clear: both;
+}
+
+
+#header {
+  background-color: #fff;
+  padding: 2em 0 1em 0;
+}
+#presentation {
+  width: 900px;
+  margin: 0 auto 0 auto;
+}
+#presentation h1 {
+  color: #333;
+  font-weight: bold;
+  font-size: 3.2em;
+  margin-bottom: 0.8em;
+}
+#presentation p {
+  margin-bottom: 0.8em;
+  line-height: 1.4em;
+}
+#presentation img {
+  float: left;
+  margin: 0 1em 1em 0;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border: 0.6em solid #a22;
+}
+#presentation p em {
+  font-size: 130%;
+  font-weight: bold;
+  font-style: normal;
+  color: #333;
+}
+
+
+#principal {
+  background-color: #a22;
+  width: 100%;
+  height: 300px;
+  display:block;
+}
+#sections {
+  width: 900px;
+  margin: 0 auto;
+}
+.section {
+  display: block;
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  float: left;
+  border-radius: 150px;
+  -moz-border-radius: 150px;
+  -webkit-border-radius: 150px;
+}
+
+#info {
+  margin: 0 auto;
+  padding: 2em 0;
+  width: 900px;
+  text-align: center;
+}
+#info p {
+  font-size: 8pt;
+  color: #777;
+  margin: 0.3em;
+}
+#info p a {
+  color: #555;
+}
