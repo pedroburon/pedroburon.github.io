@@ -27,17 +27,16 @@
 
 <div id="footer">
 <div id="info">
-{% if page.lang == 'es' %}
+{% if page.i18n == 'es' %}
     <p>Este sitio fue construido para un navegador html5, lo siento si tienes uno viejo y desagradable.</p>
     <p>Obtén el código fuente de este sitio desde <a href="https://github.com/pedroburon/pedroburon.github.com" title="código fuente">github</a>.</p>
     <p>Mi email está hospedado en google con pedroburonv como nombre de usuario.</p>
-    <p class="languages"><a href="/">en</a> | es</p>
 {% else %}
     <p>This site was built for an html5 browser, sorry if you have an old and creepy browser.</p>
     <p>Get the source code of this site from <a href="https://github.com/pedroburon/pedroburon.github.com" title="source code">github</a>.</p>
     <p>My email is hosted by google with pedroburonv as username.</p>
-    <p class="languages">en | <a href="/es">es</a></p>
 {% endif %}
+    <p class="languages"><a href="/{{page.file}}">en</a> | <a href="/es/{{page.file}}">es</a></p>
 </div>
 <div id="languages">
     <p>

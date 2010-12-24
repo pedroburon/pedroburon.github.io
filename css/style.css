@@ -15,6 +15,15 @@ a:hover {
 div.clearer {
   clear: both;
 }
+.error404 {
+  text-align: center;
+  height: 100px;
+  background-color: #fff;
+  padding-top: 2em;
+}
+.error404 h1 {
+  font-size: 300%;
+}
 
 
 #header {
