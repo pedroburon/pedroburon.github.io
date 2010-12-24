@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    
+    <title>{{ page.title }}</title>
+
+    <link rel="stylesheet" type="text/css" href="/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Molengo">
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-20399876-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+<body>
+
+{{ content }}
+
+<div id="footer">
+<div id="info">
+{% if page.lang == 'es' %}
+    <p>Este sitio fue construido para un navegador html5, lo siento si tienes uno viejo y desagradable.</p>
+    <p>Obtén el código fuente de este sitio desde <a href="https://github.com/pedroburon/pedroburon.github.com" title="código fuente">github</a>.</p>
+    <p>Mi email está hospedado en google con pedroburonv como nombre de usuario.</p>
+    <p class="languages"><a href="/">en</a> | es</p>
+{% else %}
+    <p>This site was built for an html5 browser, sorry if you have an old and creepy browser.</p>
+    <p>Get the source code of this site from <a href="https://github.com/pedroburon/pedroburon.github.com" title="source code">github</a>.</p>
+    <p>My email is hosted by google with pedroburonv as username.</p>
+    <p class="languages">en | <a href="/es">es</a></p>
+{% endif %}
+</div>
+<div id="languages">
+    <p>
+</div>
+</div>
+
+</body>
+</html>
