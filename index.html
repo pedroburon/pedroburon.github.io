@@ -4,6 +4,9 @@ title: Pedro Burón's Personal Web Page
 lang: en
 file: index.html
 ---
+
+
+
 <div id="header">
 <div id="presentation">
     <h1>Welcome to my personal web page</h1>
@@ -35,5 +38,28 @@ file: index.html
     <li><a href="#networks">Social Networks</a></li>
     <li><a href="#links">Links</a></li>
   </ul>
+<script type="text/javascript">
+$('#menu a').click(function(event) {
+  event.preventDefault();
+  var href = $(this).attr('href');
+  var link = $(this);
+  if(link.hasClass('active')) {
+    $(href).slideUp(function(){
+      link.removeClass('active');
+    });
+  } else {
+    if(!$('.section').is(':visible')) {
+      link.addClass('active');
+      $(href).slideDown();
+    } else {
+      $('.section:visible').slideUp(function(){;
+        $('#menu a').removeClass('active');
+        link.addClass('active');
+        $(href).slideDown();
+      });
+    }
+  }
+});
+</script>
 </div>
 
