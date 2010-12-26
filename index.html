@@ -34,31 +34,54 @@ file: index.html
 </div>
 <div id="menu">
   <ul>
-    <li><a href="#resume">Resumè</a></li>
+    <li><a href="#resume">Résumé</a></li>
     <li><a href="#networks">Social Networks</a></li>
     <li><a href="#links">Links</a></li>
   </ul>
 <script type="text/javascript">
-$('#menu a').click(function(event) {
-  event.preventDefault();
-  var href = $(this).attr('href');
-  var link = $(this);
-  if(link.hasClass('active')) {
-    $(href).slideUp(function(){
-      link.removeClass('active');
-    });
-  } else {
-    if(!$('.section').is(':visible')) {
-      link.addClass('active');
-      $(href).slideDown();
+
+$(function(){
+  function showSection(link) {
+    link = $(link);
+    var href = link.attr('href');
+    if(link.hasClass('active')) {
+      $(href).slideUp(function(){
+        link.removeClass('active');
+      });
+      return '#home';
     } else {
-      $('.section:visible').slideUp(function(){;
-        $('#menu a').removeClass('active');
+      if(!$('.section').is(':visible')) { // first time
         link.addClass('active');
         $(href).slideDown();
-      });
+      } else {
+        $('.section:visible').slideUp(function(){;
+          $('#menu a').removeClass('active');
+          link.addClass('active');
+          $(href).slideDown();
+        });
+      }
     }
+    return href;
   }
+
+  $('#menu a').click(function(event) {
+    var link = $(this);
+    var title = $('title').html();
+    var hash = showSection(link, title);
+    var href = link.attr('href');
+    history.pushState({path: hash}, '', hash);
+    return false;
+  });
+
+  $(window).bind('popstate', function() {
+    var id = location.hash;
+    if($(id)) {
+      var link = $('#menu a[href="' + id + '"]');
+      var title = $('title').html();
+      showSection(link, title);
+    }
+  });
+
 });
 </script>
 </div>
