@@ -125,3 +125,27 @@ div.section {
   display: none;
   height: 200px;
 }
+
+div.section h3 {
+  display: block;
+  font-size: 2em;
+  padding-bottom: 1em;
+}
+div.section p {
+  font-size: 1.2em;
+  padding: 0 0 1em;
+}
+div.section p a {
+  color: #ee8;
+  font-weight: bold;
+  font-style: normal;
+}
+
+#resume a img {
+  float: right;
+  margin-left: 1em;
+}
+
+#networks a {
+  margin-right: 1em;
+}
