@@ -1,151 +1,17 @@
-body {
-  background-color: #ddd;
-  font-family: 'Molengo', sans-serif;
-  font-size: 12pt;
-  letter-spacing: 0em;
-}
-a {
-  color: #000;
-  text-decoration: none;
-  font-style: italic;
-}
-a:hover {
-  text-decoration: underline;
-}
-div.clearer {
-  clear: both;
-}
-.error404 {
-  text-align: center;
-  height: 100px;
-  background-color: #fff;
-  padding-top: 2em;
-}
-.error404 h1 {
-  font-size: 300%;
+html { 
+    background: url(../images/bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-
-#header {
-  background-color: #fff;
-  padding: 2em 0 2em 0;
-  border-bottom: 1em solid #b22;
-}
-#presentation {
-  width: 900px;
-  margin: 0 auto 0 auto;
-}
-#presentation h1 {
-  color: #333;
-  font-weight: bold;
-  font-size: 3.2em;
-  margin-bottom: 0.8em;
-}
-#presentation p {
-  margin-bottom: 0.8em;
-  line-height: 1.4em;
-}
-#presentation img {
-  float: left;
-  margin: 0 1em 1em 0;
-  border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border: 0.6em solid #a22;
-}
-#presentation p em {
-  font-size: 130%;
-  font-weight: bold;
-  font-style: normal;
-  color: #333;
-}
-
-#info {
-  margin: 0 auto;
-  padding: 2em 0 0.1em 0;
-  width: 900px;
-  text-align: center;
-}
-#info p {
-  font-size: 8pt;
-  color: #777;
-  margin: 0.3em;
-}
-#info p.languages {
-  margin-top: 1.5em;
-}
-#info p a {
-  color: #444;
-  font-style: normal;
-}
-
-
-
-#sections {
-  background-color: #b22;
-}
-
-#menu {
-  margin: 0 auto;
-  width: 900px;
-}
-#menu li {
-  float: left;
-  width: 200px;
-  text-align: center;
-  margin: 0 1em 0 0;
-}
-#menu li a {
-  padding: 10px;
-  display: block;
-  background-color: #fff;
-  border-radius: 0 0 15px 15px;
-  -moz-border-radius: 0 0 15px 15px;
-  -webkit-border-radius: 0 0 15px 15px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 1.2em;
-}
-
-#menu li a:hover,
-#menu li a:active,
-#menu li a.active {
-  background-color: #b22;
-  color: #fff;
-  text-decoration: none;
-}
-#menu li a:hover {
-  text-decoration: underline;
-}
-
-div.section {
-  margin: 0 auto;
-  width: 900px;
-  color: #fff;
-  display: none;
-  height: 200px;
-}
-
-div.section h3 {
-  display: block;
-  font-size: 2em;
-  padding-bottom: 1em;
-}
-div.section p {
-  font-size: 1.2em;
-  padding: 0 0 1em;
-}
-div.section p a {
-  color: #ee8;
-  font-weight: bold;
-  font-style: normal;
-}
-
-#resume a img {
-  float: right;
-  margin-left: 1em;
-}
-
-#networks a {
-  margin-right: 1em;
+#page-wrap { 
+    width: 400px;
+    margin: 50px 50px; 
+    padding: 20px; 
+    background: white; 
+    -moz-box-shadow: 0 0 20px black; 
+    -webkit-box-shadow: 0 0 20px black; 
+    box-shadow: 0 0 20px black; 
 }

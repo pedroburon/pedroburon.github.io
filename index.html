@@ -1,100 +1,41 @@
----
-layout: default
-title: Pedro Burón's Personal Web Page
-lang: en
-file: index.html
----
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Pedro Burón Valencia</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="page-wrap">
+      <p class="me">
+      <h1>Pedro Burón Valencia</h1>
+      <h2>CTO at <a href="http://witoi.com">Witoi.com</a></h2>
+      <h2>Founder at PythonChile Community</h2>
+      </p>
 
+      <p class="description">
+      Python evangelist, not so furious cyclist, dev person.
+      </p>
 
+      <p class="code">
+      <h2>My repositories</h2>
+      <ul>
+        <li><a href="https://github.com/pedroburon/pedroburon.github.com" title="Not much fun">This page</a></li>
+        <li><a href="https://github.com/pedroburon/django-project-template" title="Awesome idea">Django templates for new projects (eg. Heroku)</a></li>
+        <li><a href="https://github.com/pedroburon/pythontoolbox" title="PythonChile project">Python Toolbox (ruby-toolbox clone) project</a></li>
+        <li><a href="https://github.com/witoi/django-custom-cors" title="CORS for django">Django Custom CORS middleware</a></li>
+        <li><a href="https://github.com/pedroburon" title="github repos">More...</a></li>
+        <li><a href="https://github.com/witoi" title="Witoi at github">Even more...</a></li>
+      </ul>
+      </p>
 
-<div id="header">
-<div id="presentation">
-    <h1>Welcome to my personal web page</h1>
-    <div itemscope itemtype="http://data-vocabulary.org/Person" id="information">
-        <img src="http://www.gravatar.com/avatar/e4c356ce765e1c62fe0fb65a3acf3268?s=120" width="120" height="120" itemprop="image" />
-        <p>Hi, my name's <span itemprop="name"><em>Pedro Andrés Burón</em></span>, i'm a last year <span itemprop="title">student of <em>Computing Engineering</em></span> at <a href="http://www.dcc.uchile.cl" title="Department of Computer Science at University of Chile"><span itemprop="affiliation">University of Chile</span></a>. This is my <a href="http://pedroburon.info" title="Personal Page" itemprop="url">personal page</a>. Nowadays i'm living at <em><span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address"><span itemprop="locality">Santiago</span>, <span itemprop="country-name">Chile</span></span></em>.</p>
-        <p>I'm interested in new developments for <em>web startups</em>, especially my personal projects.<p>
-        <p>I love <em>Python</em>, <em>GIT</em> and <em>linux</em>, but i call my self a <em>polyglot atheist</em> in computer science, so i don't have any problems working with any other plattforms.</p>
-        <div class="clearer"></div>
+      <p class="social">
+      <h2>Social stuff</h2>
+      <ul>
+        <li><a href="http://twitter.com/pedro_witoi" title="Contact me">Twitter</a></li>
+        <li><a href="http://www.linkedin.com/in/pedroburon" title="My online cv?">LinkedIn</a></li>
+      </ul>
+      </p>
     </div>
-</div>
-</div>
-
-<div id="sections">
-
-  <div id="resume" class="section">
-    <a href="/resume/pedroburon.pdf"><img src="/images/resume-pdf.png" /></a>
-    <a href="/resume/index.html"><img src="/images/resume-html.png" /></a>
-    <h3>My Résumé</h3>
-    <p>I have been writing my résumé in two version, <a href="/resume/pedroburon.pdf">pdf</a> and <a href="resume/index.html">html</a>.</p>
-    <p>The html version is written for <a href="http://dev.w3.org/html5/md/">microdata</a> machines readers. The pdf is written using <a href="http://www.latex-project.org/" title="Latex Official Page">Latex</a>, you can find the source code at <a href="https://github.com/pedroburon/pedroburon.github.com">github</a>. </p>
-  </div>
-
-  <div id="networks" class="section">
-    <h3>My Social Sub-Networks</h3>
-    <a href="#"><img src="/images/twitter-icon.png" /></a>
-    <a href="#"><img src="/images/facebook-icon.png" /></a>
-    <a href="#"><img src="/images/linkedin-icon.png" /></a>
-    <a href="#"><img src="/images/tumblr-icon.png" /></a>
-    <a href="#"><img src="/images/aardvark-icon.png" /></a>
-    <a href="#"><img src="/images/github-icon.png" /></a>
-  </div>
-
-  <div id="links" class="section">
-  </div>
-
-</div>
-<div id="menu">
-  <ul>
-    <li><a href="#resume">Résumé</a></li>
-    <li><a href="#networks">Social Networks</a></li>
-    <!--<li><a href="#links">Links</a></li>-->
-  </ul>
-<script type="text/javascript">
-
-$(function(){
-  function showSection(link) {
-    link = $(link);
-    var href = link.attr('href');
-    if(link.hasClass('active')) {
-      $(href).slideUp(function(){
-        link.removeClass('active');
-      });
-      return '#home';
-    } else {
-      if(!$('.section').is(':visible')) { // first time
-        link.addClass('active');
-        $(href).slideDown();
-      } else {
-        $('.section:visible').slideUp(function(){;
-          $('#menu a').removeClass('active');
-          link.addClass('active');
-          $(href).slideDown();
-        });
-      }
-    }
-    return href;
-  }
-
-  $('#menu a').click(function(event) {
-    var link = $(this);
-    var title = $('title').html();
-    var hash = showSection(link, title);
-    var href = link.attr('href');
-    history.pushState({path: hash}, '', hash);
-    return false;
-  });
-
-  $(window).bind('popstate', function() {
-    var id = location.hash;
-    if($(id)) {
-      var link = $('#menu a[href="' + id + '"]');
-      var title = $('title').html();
-      showSection(link, title);
-    }
-  });
-
-});
-</script>
-</div>
-
+  </body>
+</html>
