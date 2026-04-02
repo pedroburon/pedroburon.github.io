@@ -1,0 +1,156 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <!-- Nav -->
+  <nav class="fixed top-0 w-full z-50 border-b border-border bg-bg/80 backdrop-blur-md">
+    <div class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" class="font-mono font-medium text-accent text-lg">pb_</a>
+      <div class="flex gap-6 text-sm text-text-muted">
+        <a href="#servicios" class="hover:text-text transition-colors">Servicios</a>
+        <a href="#proceso" class="hover:text-text transition-colors">Proceso</a>
+        <a href="#contacto" class="hover:text-text transition-colors">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-4xl mx-auto px-6">
+
+    <!-- Hero -->
+    <section class="min-h-screen flex flex-col justify-center pt-20">
+      <div class="space-y-6">
+        <p class="font-mono text-accent text-sm tracking-wide">Hola, soy Pedro</p>
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+          Construyo el software<br />
+          <span class="text-text-muted">que necesitas que exista.</span>
+        </h1>
+        <p class="text-text-muted text-lg max-w-xl leading-relaxed">
+          Ingeniero de software freelance. Diseño y desarrollo productos digitales a medida
+          — desde la idea hasta producción.
+        </p>
+        <div class="flex gap-4 pt-4">
+          <a
+            href="#contacto"
+            class="inline-block px-6 py-3 bg-accent text-bg font-medium text-sm rounded-md hover:bg-accent/90 transition-colors"
+          >
+            Hablemos de tu proyecto
+          </a>
+          <a
+            href="#servicios"
+            class="inline-block px-6 py-3 border border-border text-text-muted font-medium text-sm rounded-md hover:border-text-muted hover:text-text transition-colors"
+          >
+            Ver servicios
+          </a>
+        </div>
+      </div>
+      <div class="mt-20 font-mono text-xs text-text-muted opacity-50">
+        <span class="animate-pulse">_</span> scroll
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="py-24 border-t border-border">
+      <p class="font-mono text-accent text-sm mb-2">01</p>
+      <h2 class="text-3xl font-bold mb-12">Servicios</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="p-6 border border-border rounded-lg hover:border-accent-dim transition-colors">
+          <div class="font-mono text-accent text-sm mb-3">apps</div>
+          <h3 class="text-xl font-semibold mb-2">Aplicaciones web</h3>
+          <p class="text-text-muted text-sm leading-relaxed">
+            Plataformas, dashboards, herramientas internas, SaaS. Desde el diseño de la
+            arquitectura hasta el deploy.
+          </p>
+        </div>
+        <div class="p-6 border border-border rounded-lg hover:border-accent-dim transition-colors">
+          <div class="font-mono text-accent text-sm mb-3">api</div>
+          <h3 class="text-xl font-semibold mb-2">APIs y backends</h3>
+          <p class="text-text-muted text-sm leading-relaxed">
+            Servicios robustos, integraciones con terceros, procesamiento de datos.
+            Escalables y bien documentados.
+          </p>
+        </div>
+        <div class="p-6 border border-border rounded-lg hover:border-accent-dim transition-colors">
+          <div class="font-mono text-accent text-sm mb-3">auto</div>
+          <h3 class="text-xl font-semibold mb-2">Automatizaciones</h3>
+          <p class="text-text-muted text-sm leading-relaxed">
+            Workflows, bots, scrapers, pipelines de datos. Si es repetitivo,
+            lo automatizo.
+          </p>
+        </div>
+        <div class="p-6 border border-border rounded-lg hover:border-accent-dim transition-colors">
+          <div class="font-mono text-accent text-sm mb-3">mvp</div>
+          <h3 class="text-xl font-semibold mb-2">MVP y prototipos</h3>
+          <p class="text-text-muted text-sm leading-relaxed">
+            Tienes una idea y necesitas validarla rápido. Construyo un producto mínimo
+            funcional para que salgas al mercado.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proceso -->
+    <section id="proceso" class="py-24 border-t border-border">
+      <p class="font-mono text-accent text-sm mb-2">02</p>
+      <h2 class="text-3xl font-bold mb-12">Cómo trabajo</h2>
+      <div class="space-y-8">
+        <div class="flex gap-6">
+          <div class="font-mono text-accent text-sm w-8 shrink-0">01</div>
+          <div>
+            <h3 class="font-semibold mb-1">Conversamos</h3>
+            <p class="text-text-muted text-sm">Entiendo tu problema, tus usuarios y lo que necesitas lograr.</p>
+          </div>
+        </div>
+        <div class="flex gap-6">
+          <div class="font-mono text-accent text-sm w-8 shrink-0">02</div>
+          <div>
+            <h3 class="font-semibold mb-1">Propuesta clara</h3>
+            <p class="text-text-muted text-sm">Alcance, timeline y precio. Sin sorpresas.</p>
+          </div>
+        </div>
+        <div class="flex gap-6">
+          <div class="font-mono text-accent text-sm w-8 shrink-0">03</div>
+          <div>
+            <h3 class="font-semibold mb-1">Desarrollo iterativo</h3>
+            <p class="text-text-muted text-sm">Entregas frecuentes. Ves progreso real cada semana.</p>
+          </div>
+        </div>
+        <div class="flex gap-6">
+          <div class="font-mono text-accent text-sm w-8 shrink-0">04</div>
+          <div>
+            <h3 class="font-semibold mb-1">Entrega y soporte</h3>
+            <p class="text-text-muted text-sm">Deploy a producción, documentación y acompañamiento post-lanzamiento.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-24 border-t border-border">
+      <p class="font-mono text-accent text-sm mb-2">03</p>
+      <h2 class="text-3xl font-bold mb-4">Hablemos</h2>
+      <p class="text-text-muted mb-8 max-w-lg">
+        Contame sobre tu proyecto. Respondo en menos de 24 horas.
+      </p>
+      <a
+        href="mailto:hola@pedroburon.info"
+        class="inline-flex items-center gap-2 font-mono text-accent hover:text-text transition-colors"
+      >
+        <span>hola@pedroburon.info</span>
+        <span>&rarr;</span>
+      </a>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-border">
+    <div class="max-w-4xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="font-mono text-xs text-text-muted">&copy; 2026 pedroburon.info</p>
+      <div class="flex gap-6 text-sm text-text-muted">
+        <a href="https://github.com/pedro" class="hover:text-text transition-colors">GitHub</a>
+        <a href="https://linkedin.com/in/pedro" class="hover:text-text transition-colors">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+</Layout>
