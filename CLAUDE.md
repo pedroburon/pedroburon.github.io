@@ -23,5 +23,5 @@ Personal website for pedroburon.info — a freelance software engineering servic
 ## Key Decisions
 
 - `site` is set to `https://www.pedroburon.info` in `astro.config.mjs`
-- Contact email: ``hola@pedroburon.info``
+- Contact email: ``hi@pedroburon.info``
 - All copy is in Spanish
